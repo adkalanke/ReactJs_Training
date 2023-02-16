@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Palindrome</title>
+</head>
+
+<body>
+    </p>Create an arrow function by which you will take input of string and you check given
+    string is palindrome or not.
+    </p>
+  
+    <script>
+        let isPalindromeString = (s) => {
+            alert("in Function")
+            console.log(s.length-1);
+            console.log(s.charAt(0));
+            let r='';
+            for (var i=s.length-1;i>=0;i--) {
+                alert("in for loop")
+                r = r+s.charAt(i);
+            }
+            console.log("reverseString:"+r);
+            return r;
+        }
+        let inputString = "aka";
+        let reverseString = isPalindromeString(inputString);
+        if (inputString == reverseString) {
+            document.write(`Input String: ${inputString} : Reverse String:${reverseString} given string is palindrome`)
+        }
+        else {
+            document.write("String is not Palindrome")
+        }
+
+    </script>
+</body>
+
+</html>

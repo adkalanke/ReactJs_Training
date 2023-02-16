@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Studen Object Sort</title>
+</head>
+
+<body>
+    <p>7) Create a class of student (rollno, name, totalmarks, classname). Now you have sort the
+        student data on the basis of result using arrow function.</p>
+    <script>
+
+        class Student {
+
+            constructor(rollno, name, totalMarks, className) {
+                this.rollno = rollno;
+                this.name = name;
+                this.totalMarks = totalMarks;
+                this.className = className;
+            }
+        }
+        let s1 = new Student(1, "Akash", 500, "A");
+        let s2 = new Student(2, "Ankush", 600, "B");
+        let s3 = new Student(3, "Suraj", 300, "C");
+        let s4 = new Student(4, "Ravi", 300, "D");
+        console.log(s1);
+
+        let studentArray = [s1, s2, s3, s4];
+        console.log(studentArray);
+        let sortStudentByMarks = (stu1, stu2) => {
+
+
+            return stu1.totalMarks - stu2.totalMarks
+        };
+        let a = studentArray.sort(sortStudentByMarks)
+
+        for (let key in a) {
+            document.write("Rollno:" + a[key].rollno + " Name: " + a[key].name + " TotalMarks: " + a[key].totalMarks + " ClassName: " + a[key].className + "<br>");
+        }
+
+
+    </script>
+
+</body>
+
+</html>

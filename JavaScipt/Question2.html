@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>String Array length</title>
+</head>
+
+<body>
+    <P>2) Create an arrow function by which will take multiple strings and you have print each 
+        string along with length of each string</P><br>
+    Input:-<p1 id="p1"></p1><br>
+
+    <script>
+
+        let stringArrayLength = (stringArray) => {
+
+            alert(`in fuction ${stringArray}`);
+            document.write("Output: <br>")
+            for (let i = 0; i < stringArray.length; i++) {
+
+                document.write(" Input string: " + stringArray[i] + " String Length: " + stringArray[i].length + "<br>");
+            }
+
+
+
+        }
+        let stringArraya = ["red", "orange", "yellow", "pink"];
+        console.log(stringArraya);
+        stringArrayLength(stringArraya);
+
+        document.getElementById("p1").innerHTML = stringArraya;
+
+
+    </script>
+
+</body>
+
+</html>

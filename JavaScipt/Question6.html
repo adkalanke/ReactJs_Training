@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Class And Object</title>
+</head>
+
+<body>
+    <p>Create a class of item (itemid, itemname, itemprice, category) and create object of the
+        class and print each detail of item. With arrow functions.</p>
+    <script>
+        class Item {
+            constructor(itemId, itemName, itemPrice,category) {
+                this.itemId = itemId;
+                this.itemName = itemName;
+                this.itemPrice = itemPrice;
+                this.category = category;
+            }
+        }
+
+        
+
+    let printObject=(item)=>{
+        console.log(item.itemPrice)
+        document.write("ItemId: "+item.itemId+"<br>ItemName: "+item.itemName+"<br>ItemPrice:" +item.itemPrice+"<br>ItemCategory: "+item.category)
+      
+    }
+
+    let itemObj=new Item(1,"Computer",50000,"Electronics");
+    printObject(itemObj);
+
+    </script>
+</body>
+
+</html>
